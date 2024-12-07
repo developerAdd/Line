@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+   <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="theme-color" content="#111111">
+   <title>title</title>
+   <link rel="preload" href="fonts/TTFirsNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/TTFirsNeue-DemiBold.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/TTFirsNeue-Medium.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/HalvarBreit-Bd.woff2" as="font" type="font/woff2" crossorigin>
+
+   <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/main.css">
+   <script defer src="js/main.js"></script>
+</head>
+
+   <body class="page__body">
+      <div class="site-container">
+         <img src="./img/svg/backTop.svg" alt="backTop" class='back back__top'>
+         <img src="./img/svg/backBottom.svg" alt="backBottom" class='back back__bottom'>
+         <div class="layout">
+            <aside id='aside' class='aside _hide'>
+               <div class="aside__top">
+                  <div class="logo">
+                     <img src="./img/logo.png" alt="logo">
+                     <span>Line pay</span>
+                  </div>
+                  <button id='btn-menu' class="btn-reset btn">
+                     <svg class="svg">
+                       <use xlink:href="img/sprite.svg#arrow"></use>
+                     </svg>
+                  </button>
+               </div>
+               <div class="aside__content">
+                  <div class="aside__scroll">
+                  <nav class='nav'>
+                     <a href="index2.html" class="link nav__link">
+                       <svg>
+                         <use xlink:href="img/sprite.svg#home"></use>
+                       </svg>
+                       <span>Главная</span>
+                     </a>
+                    <a href="make-marchant.html" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#create" class='stroke'></use>
+                        </svg>
+                        <span>Создать мерчант</span>
+                      </a>
+                       <a href="notification.html" class="link nav__link _active">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#notification"></use>
+                        </svg>
+                        <span>Уведомления</span>
+                      </a>
+                       <a href="cms-modules.html" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#cms"></use>
+                        </svg>
+                        <span>CMS модули</span>
+                      </a>
+                      <button class="btn-reset burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                       <a href="ref.html" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#network"></use>
+                        </svg>
+                        <span>Партнерская сеть</span>
+                      </a>
+                    <a href="settings.html" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#settings"></use>
+                        </svg>
+                        <span>Настройки</span>
+                      </a>
+                      <a href="#" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#question" ></use>
+                        </svg>
+                        <span>Ознакомление</span>
+                      </a>
+                      <a href="#" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#news"></use>
+                        </svg>
+                        <span>Новости</span>
+                      </a>
+                  </nav>
+                 <div class="theme">
+                   <button class="btn-reset btn theme-btn _active">
+                     <svg >
+                       <use xlink:href="img/sprite.svg#moon"></use>
+                     </svg>
+                  </button>
+                  <button class="btn-reset btn theme-btn">
+                    <svg >
+                      <use xlink:href="img/sprite.svg#sun"></use>
+                    </svg>
+                 </button>
+                  </div>
+               </div>
+               </div>
+            </aside>
+            <main class="main">
+               <header class="header">
+  <div class="profile">
+    <button class="btn-reset btn-secondary notification">
+      <svg class="svg">
+        <use xlink:href="img/sprite.svg#mage_notification"></use>
+      </svg>
+    </button>
+    <div class="user">
+      <img src="./img/avatar.svg" alt="avatar" width='104' height='104'>
+      <div class="user__name">
+        <span>TestName</span>
+        <p>Клиент</p>
+      </div>
+    </div>
+    <button class="btn-reset btn logout">
+      <svg class="svg">
+        <use xlink:href="img/sprite.svg#logout"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+               <section class="mainPage">
+    <div class="page__container settingsMerchant">
+        <h2>Уведомления</h2>
+        <p>Подключите уведомления и будьте в курсе новостей!</p>
+        <div class="notificationContent">
+            <div class="notification__card">
+                <span class="title">Подключение Telegram оповещений </span>
+                <p class='notification__text'>Подключение Telegram Аккаунта
+                    Отправьте боту сообщение с кодом —
+                    <a href="#" class='link'>@LinepayNotificationsBot</a></p>
+                <p class='notification__status'>Статус: <span class='_success'> Подключен</span></p>
+                <input type="text" class='input-reset input' placeholder='/bind LINEPAY1'>
+                <button class='btn-reset btn-white notification__btn'>Сохранить</button>
+            </div>
+            <div class="notification__card">
+                <span class="title">Подключение Email оповещений </span>
+                <p class='notification__text'>Подключение E-Mail Впишите ниже вашу почту и получайте оповещения на нее</p>
+                <p class='notification__status'>Статус: <span>Не подключен</span></p>
+                <input type="text" class='input-reset input' placeholder='Введите свой E-Mail'>
+                <button class='btn-reset btn-white notification__btn'>Сохранить</button>
+            </div>
+        </div>
+    </div>
+</section>
+            </main>
+         </div>
+
+      </div>
+   </body>
+
+</html>

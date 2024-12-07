@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+   <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="theme-color" content="#111111">
+   <title>title</title>
+   <link rel="preload" href="fonts/TTFirsNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/TTFirsNeue-DemiBold.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/TTFirsNeue-Medium.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/HalvarBreit-Bd.woff2" as="font" type="font/woff2" crossorigin>
+
+   <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/main.css">
+   <script defer src="js/main.js"></script>
+</head>
+
+   <body class="page__body">
+      <div class="site-container">
+         <img src="./img/svg/backTop.svg" alt="backTop" class='back back__top'>
+         <img src="./img/svg/backBottom.svg" alt="backBottom" class='back back__bottom'>
+         <div class="layout">
+            <aside id='aside' class='aside _hide'>
+               <div class="aside__top">
+                  <div class="logo">
+                     <img src="./img/logo.png" alt="logo">
+                     <span>Line pay</span>
+                  </div>
+                  <button id='btn-menu' class="btn-reset btn">
+                     <svg class="svg">
+                       <use xlink:href="img/sprite.svg#arrow"></use>
+                     </svg>
+                  </button>
+               </div>
+               <div class="aside__content">
+                  <div class="aside__scroll">
+                  <nav class='nav'>
+                     <a href="index2.html" class="link nav__link">
+                       <svg>
+                         <use xlink:href="img/sprite.svg#home"></use>
+                       </svg>
+                       <span>Главная</span>
+                     </a>
+                    <a href="make-marchant.html" class="link nav__link _active">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#create" class='stroke'></use>
+                        </svg>
+                        <span>Создать мерчант</span>
+                      </a>
+                       <a href="notification.html" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#notification"></use>
+                        </svg>
+                        <span>Уведомления</span>
+                      </a>
+                       <a href="cms-modules.html" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#cms"></use>
+                        </svg>
+                        <span>CMS модули</span>
+                      </a>
+                      <button class="btn-reset burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                       <a href="ref.html" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#network"></use>
+                        </svg>
+                        <span>Партнерская сеть</span>
+                      </a>
+                    <a href="settings.html" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#settings"></use>
+                        </svg>
+                        <span>Настройки</span>
+                      </a>
+                      <a href="#" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#question" ></use>
+                        </svg>
+                        <span>Ознакомление</span>
+                      </a>
+                      <a href="#" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#news"></use>
+                        </svg>
+                        <span>Новости</span>
+                      </a>
+                  </nav>
+                 <div class="theme">
+                   <button class="btn-reset btn theme-btn _active">
+                     <svg >
+                       <use xlink:href="img/sprite.svg#moon"></use>
+                     </svg>
+                  </button>
+                  <button class="btn-reset btn theme-btn">
+                    <svg >
+                      <use xlink:href="img/sprite.svg#sun"></use>
+                    </svg>
+                 </button>
+                  </div>
+               </div>
+               </div>
+            </aside>
+            <main class="main">
+               <header class="header">
+  <div class="profile">
+    <button class="btn-reset btn-secondary notification">
+      <svg class="svg">
+        <use xlink:href="img/sprite.svg#mage_notification"></use>
+      </svg>
+    </button>
+    <div class="user">
+      <img src="./img/avatar.svg" alt="avatar" width='104' height='104'>
+      <div class="user__name">
+        <span>TestName</span>
+        <p>Клиент</p>
+      </div>
+    </div>
+    <button class="btn-reset btn logout">
+      <svg class="svg">
+        <use xlink:href="img/sprite.svg#logout"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+               <section class="mainPage">
+    <div class="page__container settingsMerchant">
+        <h2>Мерчант #1 </h2>
+        <p>Test Merchant</p>
+    <section class="settingsMerchantSection">
+        <div class="settingsMerchant__content">
+            <div class="settingsMerchant__infos">
+                <div class="settingsMerchant__info _green">
+                    <p>Баланс</p>
+                    <span>1000000.00 ₽</span>
+                </div>
+                <div class="settingsMerchant__info _orange">
+                    <p>Сумма выводов</p>
+                    <span>1000000.00 ₽</span>
+                </div>
+                <div class="settingsMerchant__info _blue">
+                    <p>Сумма пополнений</p>
+                    <span>1000000.00 ₽</span>
+                </div>
+            </div>
+        </div>
+        <!-- большая таблица пока помещается -->
+        <div class="swiperTable _testDesc">
+            <!-- Блок для десктопа -->
+             <div class="tableContainer __with-responce">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>
+                            <span>ID ПЛАТЕЖА</span>
+                        </th>
+                        <th>
+                            <span>ORDER</span>
+                        </th>
+                            <th>
+                            <span>EMAIL</span>
+                        </th>
+                        <th>
+                            <span>Сумма</span>
+                        </th>
+                        <th>
+                            <span>Зачислено</span>
+                        </th>
+                            <th>
+                            <span>Система</span>
+                        </th>
+                        <th>
+                            <span>Дата</span>
+                        </th>
+                        <th class='center'>
+                            <span>Ответ</span>
+                        </th>
+                        <th class='center'>
+                            <span>Статус</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class='light'>
+                                <span>5935</span>
+                            </td>
+                            <td class='text-grey'>
+                                <span>5000</span>
+                            </td>
+                            <td class='light'>
+                                <span>forutybe2@gmail.com</span>
+                            </td>
+                            <td class='text-grey'>
+                                <span>1000₽</span>
+                            </td>
+                            <td >
+                                <span>890₽</span>
+                            </td>
+                            <td class='text-grey light'>
+                                <span>fk-wallet</span>
+                            </td>
+                            <td class='light'>
+                                <span>26.09.2024<br/>20:55:46</span>
+                            </td>
+                            <td>
+                                <button class="btn-reset">Подробнее</button>
+                            </td>
+                            <td>
+                                <span class='status _success'>Оплачен</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='light'>
+                                <span>5935</span>
+                            </td>
+                            <td class='text-grey'>
+                                <span>5000</span>
+                            </td>
+                            <td class='light'>
+                                <span>forutybe2@gmail.com</span>
+                            </td>
+                            <td class='text-grey'>
+                                <span>1000₽</span>
+                            </td>
+                            <td >
+                                <span>890₽</span>
+                            </td>
+                            <td class='text-grey light'>
+                                <span>fk-wallet</span>
+                            </td>
+                            <td class='light'>
+                                <span>26.09.2024<br/>20:55:46</span>
+                            </td>
+                            <td>
+                                <button class="btn-reset">Подробнее</button>
+                            </td>
+                            <td>
+                                <span class='status _loading'>Оплачен</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='light'>
+                                <span>5935</span>
+                            </td>
+                            <td class='text-grey'>
+                                <span>5000</span>
+                            </td>
+                            <td class='light'>
+                                <span>forutybe2@gmail.com</span>
+                            </td>
+                            <td class='text-grey'>
+                                <span>1000₽</span>
+                            </td>
+                            <td >
+                                <span>890₽</span>
+                            </td>
+                            <td class='text-grey light'>
+                                <span>fk-wallet</span>
+                            </td>
+                            <td class='light'>
+                                <span>26.09.2024<br/>20:55:46</span>
+                            </td>
+                            <td>
+                                <button class="btn-reset">Подробнее</button>
+                            </td>
+                            <td>
+                                <span class='status _error'>Оплачен</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
+            <div class="pagination">
+                <button class="btn-reset btn _active">
+                    <svg class="svg">
+                        <use xlink:href="img/sprite.svg#prev"></use>
+                    </svg>
+                </button>
+                <button class="btn-reset btn _active">
+                    1
+                </button>
+                <button class="btn-reset btn">
+                    2
+                </button>
+                <button class="btn-reset btn">
+                    3
+                </button>
+                <button class="btn-reset btn">
+                    4
+                </button>
+                <button class="btn-reset btn">
+                    <svg class="svg">
+                        <use xlink:href="img/sprite.svg#next"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Большая таблица в несколько листов-->
+        <div class="swiperTable _testMob">
+                        <!-- Блок для десктопа -->
+                        <span class='title'>История</span>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="tableContainer">
+                                        <table>
+                                        <thead>
+                                            <tr>
+                                            <th>
+                                                <span>ID ПЛАТЕЖА</span>
+                                            </th>
+                                            <th>
+                                                <span>ORDER</span>
+                                            </th>
+                                                <th>
+                                                <span>EMAIL</span>
+                                            </th>
+                                            <th>
+                                                <span>Сумма</span>
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class='light'>
+                                                    <span>5935</span>
+                                                </td>
+                                                <td class='text-grey'>
+                                                    <span>5000</span>
+                                                </td>
+                                                <td class='light'>
+                                                    <span>forutybe2@gmail.com</span>
+                                                </td>
+                                                <td class='text-grey'>
+                                                    <span>1000₽</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='light'>
+                                                    <span>5935</span>
+                                                </td>
+                                                <td class='text-grey'>
+                                                    <span>5000</span>
+                                                </td>
+                                                <td class='light'>
+                                                    <span>forutybe2@gmail.com</span>
+                                                </td>
+                                                <td class='text-grey'>
+                                                    <span>1000₽</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='light'>
+                                                    <span>5935</span>
+                                                </td>
+                                                <td class='text-grey'>
+                                                    <span>5000</span>
+                                                </td>
+                                                <td class='light'>
+                                                    <span>forutybe2@gmail.com</span>
+                                                </td>
+                                                <td class='text-grey'>
+                                                    <span>1000₽</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='light'>
+                                                    <span>5935</span>
+                                                </td>
+                                                <td class='text-grey'>
+                                                    <span>5000</span>
+                                                </td>
+                                                <td class='light'>
+                                                    <span>forutybe2@gmail.com</span>
+                                                </td>
+                                                <td class='text-grey'>
+                                                    <span>1000₽</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class='light'>
+                                                    <span>5935</span>
+                                                </td>
+                                                <td class='text-grey'>
+                                                    <span>5000</span>
+                                                </td>
+                                                <td class='light'>
+                                                    <span>forutybe2@gmail.com</span>
+                                                </td>
+                                                <td class='text-grey'>
+                                                    <span>1000₽</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                    <button class="btn-reset btn-swipe _next">
+                                        <img src="./img/svg/swipe.svg" alt="swipe">
+                                        <span>Свайпни</span>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="btn-reset btn-swipe _prev">
+                                        <img src="./img/svg/swipe.svg" alt="swipe">
+                                        <span>Свайпни</span>
+                                    </button>
+                                    <div class="tableContainer">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                <th>
+                                                    <span>Зачислено</span>
+                                                </th>
+                                                    <th>
+                                                    <span>Система</span>
+                                                </th>
+                                                <th>
+                                                    <span>Дата</span>
+                                                </th>
+                                                <th class='center'>
+                                                    <span>Ответ</span>
+                                                </th>
+                                                <th class='center'>
+                                                    <span>Статус</span>
+                                                </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td >
+                                                        <span>890₽</span>
+                                                    </td>
+                                                    <td class='text-grey light'>
+                                                        <span>fk-wallet</span>
+                                                    </td>
+                                                    <td class='light'>
+                                                        <span>26.09.2024<br/>20:55:46</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn-reset">Подробнее</button>
+                                                    </td>
+                                                    <td>
+                                                        <span class='status _success'>Оплачен</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td >
+                                                        <span>890₽</span>
+                                                    </td>
+                                                    <td class='text-grey light'>
+                                                        <span>fk-wallet</span>
+                                                    </td>
+                                                    <td class='light'>
+                                                        <span>26.09.2024<br/>20:55:46</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn-reset">Подробнее</button>
+                                                    </td>
+                                                    <td>
+                                                        <span class='status _success'>Оплачен</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td >
+                                                        <span>890₽</span>
+                                                    </td>
+                                                    <td class='text-grey light'>
+                                                        <span>fk-wallet</span>
+                                                    </td>
+                                                    <td class='light'>
+                                                        <span>26.09.2024<br/>20:55:46</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn-reset">Подробнее</button>
+                                                    </td>
+                                                    <td>
+                                                        <span class='status _success'>Оплачен</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td >
+                                                        <span>890₽</span>
+                                                    </td>
+                                                    <td class='text-grey light'>
+                                                        <span>fk-wallet</span>
+                                                    </td>
+                                                    <td class='light'>
+                                                        <span>26.09.2024<br/>20:55:46</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn-reset">Подробнее</button>
+                                                    </td>
+                                                    <td>
+                                                        <span class='status _success'>Оплачен</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td >
+                                                        <span>890₽</span>
+                                                    </td>
+                                                    <td class='text-grey light'>
+                                                        <span>fk-wallet</span>
+                                                    </td>
+                                                    <td class='light'>
+                                                        <span>26.09.2024<br/>20:55:46</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn-reset">Подробнее</button>
+                                                    </td>
+                                                    <td>
+                                                        <span class='status _success'>Оплачен</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagination">
+                            <button class="btn-reset btn _active">
+                                <svg class="svg">
+                                    <use xlink:href="img/sprite.svg#prev"></use>
+                                </svg>
+                            </button>
+                            <button class="btn-reset btn _active">
+                                1
+                            </button>
+                            <button class="btn-reset btn">
+                                2
+                            </button>
+                            <button class="btn-reset btn">
+                                3
+                            </button>
+                            <button class="btn-reset btn">
+                                4
+                            </button>
+                            <button class="btn-reset btn">
+                                <svg class="svg">
+                                    <use xlink:href="img/sprite.svg#next"></use>
+                                </svg>
+                            </button>
+                        </div>
+        </div>
+        <form  class="makeMerchant__form">
+            <div class="makeMerchant__block">
+                <span class="title">Настройки Мерчант #1 </span>
+                <div class="makeMerchant__items">
+                    <div class="makeMerchant__item">
+                        <span>Введите название сайта</span>
+                        <input type="text" class='input-reset input' placeholder='linepay.fun'>
+                    </div>
+                    <div class="makeMerchant__item">
+                        <span>Введите URL сайта</span>
+                        <input type="text" class='input-reset input' placeholder='linepay.fun'>
+                    </div>
+                    <div class="makeMerchant__item">
+                        <span>Кто платит комиссию?</span>
+                        <div  class="switch">
+                            <label class="switch__item">
+                                <input type="radio" name='pay' checked>
+                                <span >Покупатель</span>
+                            </label>
+                            <label class="switch__item">
+                                <input type="radio" name='pay'>
+                                <span >Мерчант</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="makeMerchant__block">
+                <span class="title">Настройка URL </span>
+                <div class="makeMerchant__items">
+                    <div class="makeMerchant__item">
+                        <span>URL оповещений</span>
+                        <input type="text" class='input-reset input' placeholder='linepay.fun'>
+                    </div>
+                    <div class="makeMerchant__item">
+                        <span>URL успешной оплаты</span>
+                        <input type="text" class='input-reset input' placeholder='linepay.fun'>
+                    </div>
+                    <div class="makeMerchant__item">
+                        <span>URL успешной оплаты</span>
+                        <input type="text" class='input-reset input' placeholder='linepay.fun'>
+                    </div>
+                </div>
+            </div>
+            <div class="makeMerchant__block">
+                <span class="title">Настройка секретного слова</span>
+                <div class="makeMerchant__items">
+                    <div class="makeMerchant__item">
+                        <span>Секретное слово 1</span>
+                        <input type="text" class='input-reset input' placeholder='linepay.fun'>
+                    </div>
+                    <div class="makeMerchant__item">
+                        <span>Секретное слово 2</span>
+                        <input type="text" class='input-reset input' placeholder='linepay.fun'>
+                    </div>
+                    <button class='btn-reset btn-white makeMerchant__btn'>Создать мерчнант</button>
+                </div>
+            </div>
+        </form>
+        <div class="settings__cards">
+            <div class="settings__card">
+                <span class="title">Ссылка на оплату</span>
+                <div class="makeMerchant__item">
+                    <span>Введите название сайта</span>
+                    <input type="text" class='input-reset input' placeholder='linepay.fun'>
+                </div>
+                <div class="makeMerchant__item">
+                    <span>Введите название сайта</span>
+                    <input type="text" class='input-reset input' placeholder='linepay.fun'>
+                </div>
+                <div class="merchant__textarea">
+                    <textarea placeholder='https://linepay.fun/pay?
+					m_id=1121&amount=555&order_id=231321&sign=29f54d22255f82941ccb350719d0e65d'></textarea>
+                    <button class='btn-reset btn-white'>Получить</button>
+                </div>
+            </div>
+            <div class="settings__card">
+                <span class="title">Дизайн оплаты</span>
+                <div class="design__items">
+                    <label class="design__item">
+                        <input type="radio" checked>
+                        <div class="design__img">
+                            <img src="./img/designPay_1.png" alt="design">
+                        </div>
+                    </label>
+                </div>
+                <span class="title">Дизайн реквизитов</span>
+                <div class="design__items">
+                <label class="design__item">
+                    <input type="radio" name='req_design'>
+                    <div class="design__img">
+                        <img src="./img/designReq_1.png" alt="design">
+                    </div>
+                </label>
+                <label class="design__item">
+                    <input type="radio" name='req_design' checked>
+                    <div class="design__img">
+                        <img src="./img/designReq_2.png" alt="design">
+                    </div>
+                </label>
+                </div>
+            </div>
+            <div class="settings__card">
+                <span class="title">Перевод баланса</span>
+                <div class="makeMerchant__item">
+                    <span>Сумма</span>
+                    <input type="number" class='input-reset input' placeholder='0'>
+                </div>
+                <div class="makeMerchant__item">
+                    <span>Мерчант</span>
+                    <div class="select">
+                        <svg class="select-icon">
+                            <use xlink:href="img/sprite.svg#next"></use>
+                        </svg>
+                            <input type='text' class='input-reset input' placeholder='Список мерчантов пуст'/>
+                        <ul class="list-reset">
+                            <li>Пункт 1</li>
+                            <li>Пункт 2</li>
+                            <li>Пункт 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class='btn-reset btn-white transfer_btn'>Перевод</button>
+            </div>
+            <div class="settings__card _scroll">
+                <span class="title">Активация методов</span>
+                <div class="settings__methods">
+                    <div class="settings__method">
+                        <span>Test pay</span>
+                        <div  class="switch">
+                            <label class="switch__item">
+                                <input type="radio" name='test1' checked>
+                                <span >Выключен</span>
+                            </label>
+                            <label class="switch__item">
+                                <input type="radio" name='test1'>
+                                <span >Включен</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settings__method">
+                        <span>Карты рф</span>
+                        <div  class="switch">
+                            <label class="switch__item">
+                                <input type="radio" name='test2' checked>
+                                <span >Выключен</span>
+                            </label>
+                            <label class="switch__item">
+                                <input type="radio" name='test2'>
+                                <span >Включен</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settings__method">
+                        <span>Карты WORLD</span>
+                        <div  class="switch">
+                            <label class="switch__item">
+                                <input type="radio" name='test3' checked>
+                                <span >Выключен</span>
+                            </label>
+                            <label class="switch__item">
+                                <input type="radio" name='test3'>
+                                <span >Включен</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settings__method">
+                        <span>СБП</span>
+                        <div  class="switch">
+                            <label class="switch__item">
+                                <input type="radio" name='test4' checked>
+                                <span >Выключен</span>
+                            </label>
+                            <label class="switch__item">
+                                <input type="radio" name='test4'>
+                                <span >Включен</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settings__method">
+                        <span>Test pay</span>
+                        <div  class="switch">
+                            <label class="switch__item">
+                                <input type="radio" name='test5' checked>
+                                <span >Выключен</span>
+                            </label>
+                            <label class="switch__item">
+                                <input type="radio" name='test5'>
+                                <span >Включен</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settings__method">
+                        <span>Карты рф</span>
+                        <div  class="switch">
+                            <label class="switch__item">
+                                <input type="radio" name='test6' checked>
+                                <span >Выключен</span>
+                            </label>
+                            <label class="switch__item">
+                                <input type="radio" name='test6'>
+                                <span >Включен</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settings__method">
+                        <span>Карты WORLD</span>
+                        <div  class="switch">
+                            <label class="switch__item">
+                                <input type="radio" name='test7' checked>
+                                <span >Выключен</span>
+                            </label>
+                            <label class="switch__item">
+                                <input type="radio" name='test7'>
+                                <span >Включен</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settings__method">
+                        <span>СБП</span>
+                        <div  class="switch">
+                            <label class="switch__item">
+                                <input type="radio" name='test8' checked>
+                                <span >Выключен</span>
+                            </label>
+                            <label class="switch__item">
+                                <input type="radio" name='test8'>
+                                <span >Включен</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="setting__form">
+            <span class='title'>Вывод средств</span>
+            <div class="setting__form__content">
+                <div class="makeMerchant__item">
+                    <span>Сумма вывода</span>
+                    <input type="number" class='input-reset input' placeholder='Введите сумму вывода'>
+                </div>
+                <div class="makeMerchant__item">
+                    <span>Номер</span>
+                    <input type="text" class='input-reset input' placeholder='TEuBL12AdvjYmwMKsorJ8pWURQj7b9CaUb'>
+                </div>
+                <div class="makeMerchant__item">
+                    <span>Система</span>
+                    <div class="select">
+                        <svg class="select-icon">
+                            <use xlink:href="img/sprite.svg#next"></use>
+                        </svg>
+                            <input type='text' class='input-reset input' placeholder='Выберите систему'/>
+                        <ul class="list-reset">
+                            <li>Пункт 1</li>
+                            <li>Пункт 2</li>
+                            <li>Пункт 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="makeMerchant__item">
+                    <span>Банк (Для СБП)</span>
+                    <div class="select">
+                        <svg class="select-icon">
+                            <use xlink:href="img/sprite.svg#next"></use>
+                        </svg>
+                            <input type='text' class='input-reset input' placeholder='Выберите систему вывода'/>
+                        <ul class="list-reset">
+                            <li>Пункт 1</li>
+                            <li>Пункт 2</li>
+                            <li>Пункт 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class='btn-reset btn-white settingFormBtn'>Создать заявку</button>
+            </div>
+        </form>
+        <div class="swiperTable">
+            <!-- Блок для десктопа -->
+            <span class='title'>История</span>
+             <div class="tableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>
+                            <span>ID ПЛАТЕЖА</span>
+                        </th>
+                        <th>
+                            <span>РЕКВИЗИТЫ</span>
+                        </th>
+                            <th>
+                            <span>СУММА</span>
+                        </th>
+                        <th>
+                            <span>СИСТЕМА</span>
+                        </th>
+                        <th>
+                            <span>ДАТА</span>
+                        </th>
+                            <th>
+                            <span>СТАТУС</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class='light'>
+                                <span>5935</span>
+                            </td>
+                            <td class='text-grey'>
+                                <span>4888 5888 6888 7888</span>
+                            </td>
+                            <td>
+                                <span>180.000 ₽</span>
+                            </td>
+                            <td class='text-grey'>
+                                <span>Т — Банк</span>
+                            </td>
+                            <td class='light'>
+                                <span>19.11.2024</span>
+                            </td>
+                            <td>
+                                <span class='status _success'>Оплачен</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+             </div>
+            <div class="pagination">
+                <button class="btn-reset btn _active">
+                    <svg class="svg">
+                        <use xlink:href="img/sprite.svg#prev"></use>
+                    </svg>
+                </button>
+                <button class="btn-reset btn _active">
+                    1
+                </button>
+                <button class="btn-reset btn">
+                    2
+                </button>
+                <button class="btn-reset btn">
+                    3
+                </button>
+                <button class="btn-reset btn">
+                    4
+                </button>
+                <button class="btn-reset btn">
+                    <svg class="svg">
+                        <use xlink:href="img/sprite.svg#next"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    </div>
+</section>
+         <style>
+			@media screen and (max-width: 978px) {
+				._testDesc{
+					display: none;
+				}	
+			}
+			@media screen and (min-width: 978px) {
+				._testMob{
+					display: none;
+				}	
+			}
+		 </style>
+            </main>
+         </div>
+
+      </div>
+   </body>
+
+</html>

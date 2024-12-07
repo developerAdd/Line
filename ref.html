@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+   <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="theme-color" content="#111111">
+   <title>title</title>
+   <link rel="preload" href="fonts/TTFirsNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/TTFirsNeue-DemiBold.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/TTFirsNeue-Medium.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/HalvarBreit-Bd.woff2" as="font" type="font/woff2" crossorigin>
+
+   <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/main.css">
+   <script defer src="js/main.js"></script>
+</head>
+
+   <body class="page__body">
+      <div class="site-container">
+         <img src="./img/svg/backTop.svg" alt="backTop" class='back back__top'>
+         <img src="./img/svg/backBottom.svg" alt="backBottom" class='back back__bottom'>
+         <div class="layout">
+            <aside id='aside' class='aside _hide'>
+               <div class="aside__top">
+                  <div class="logo">
+                     <img src="./img/logo.png" alt="logo">
+                     <span>Line pay</span>
+                  </div>
+                  <button id='btn-menu' class="btn-reset btn">
+                     <svg class="svg">
+                       <use xlink:href="img/sprite.svg#arrow"></use>
+                     </svg>
+                  </button>
+               </div>
+               <div class="aside__content">
+                  <div class="aside__scroll">
+                  <nav class='nav'>
+                     <a href="index2.html" class="link nav__link">
+                       <svg>
+                         <use xlink:href="img/sprite.svg#home"></use>
+                       </svg>
+                       <span>Главная</span>
+                     </a>
+                    <a href="make-marchant.html" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#create" class='stroke'></use>
+                        </svg>
+                        <span>Создать мерчант</span>
+                      </a>
+                       <a href="notification.html" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#notification"></use>
+                        </svg>
+                        <span>Уведомления</span>
+                      </a>
+                       <a href="cms-modules.html" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#cms"></use>
+                        </svg>
+                        <span>CMS модули</span>
+                      </a>
+                      <button class="btn-reset burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                       <a href="ref.html" class="link nav__link _active">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#network"></use>
+                        </svg>
+                        <span>Партнерская сеть</span>
+                      </a>
+                    <a href="settings.html" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#settings"></use>
+                        </svg>
+                        <span>Настройки</span>
+                      </a>
+                      <a href="#" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#question" ></use>
+                        </svg>
+                        <span>Ознакомление</span>
+                      </a>
+                      <a href="#" class="link nav__link">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#news"></use>
+                        </svg>
+                        <span>Новости</span>
+                      </a>
+                  </nav>
+                 <div class="theme">
+                   <button class="btn-reset btn theme-btn _active">
+                     <svg >
+                       <use xlink:href="img/sprite.svg#moon"></use>
+                     </svg>
+                  </button>
+                  <button class="btn-reset btn theme-btn">
+                    <svg >
+                      <use xlink:href="img/sprite.svg#sun"></use>
+                    </svg>
+                 </button>
+                  </div>
+               </div>
+               </div>
+            </aside>
+            <main class="main">
+               <header class="header">
+  <div class="profile">
+    <button class="btn-reset btn-secondary notification">
+      <svg class="svg">
+        <use xlink:href="img/sprite.svg#mage_notification"></use>
+      </svg>
+    </button>
+    <div class="user">
+      <img src="./img/avatar.svg" alt="avatar" width='104' height='104'>
+      <div class="user__name">
+        <span>TestName</span>
+        <p>Клиент</p>
+      </div>
+    </div>
+    <button class="btn-reset btn logout">
+      <svg class="svg">
+        <use xlink:href="img/sprite.svg#logout"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+               <section class="mainPage">
+    <div class="page__container settingsMerchant">
+        <h2>Партнерская сеть</h2>
+        <p>Приглшайте и зарабатывайте с нами</p>
+    <section class="settingsMerchantSection">
+        <div class="ref__main">
+            <div class="ref__cards">
+                <div class="ref__card">
+                    <div class="ref__ico">
+                        <svg >
+                            <use xlink:href="img/sprite.svg#partner_1"></use>
+                        </svg>
+                    </div>
+                    <p>Всего заработано</p>
+                    <h2>174,035 <span> ₽</span></h2>
+                </div>
+                <div class="ref__card">
+                    <div class="ref__ico">
+                        <svg >
+                            <use xlink:href="img/sprite.svg#partner_2"></use>
+                        </svg>
+                    </div>
+                    <p>Всего рефералов</p>
+                    <h2>1,249 <span> чел.</span></h2>
+                </div>
+                <div class="ref__card">
+                    <div class="ref__ico">
+                        <svg >
+                            <use xlink:href="img/sprite.svg#partner_3"></use>
+                        </svg>
+                    </div>
+                    <p>Баланс на вывод</p>
+                    <h2>5,035 <span> ₽</span></h2>
+                </div>
+                <div class="ref__card">
+                    <div class="ref__ico">
+                        <svg >
+                            <use xlink:href="img/sprite.svg#partner_4"></use>
+                        </svg>
+                    </div>
+                    <p>Реферальный процент</p>
+                    <h2>0.5 <span> %</span></h2>
+                </div>
+            </div>
+            <div class="ref__link">
+                <span class="title">Делитесь своей реф. ссылкой</span>
+                <p class="ref__description">Вы можете скопировать свою реф. ссылку и поделится ею с вашими друзьями</p>
+                <div class="ref__copy">
+                    <span>https://linepay.fun/?ref=0000</span>
+                    <button class="btn-reset">
+                        <svg >
+                            <use xlink:href="img/sprite.svg#copy"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="ref__graphic">
+                <span class='title'>Прибыль за последние 7 дней</span>
+                <div class="graphic">
+                    <img src="./img/graphic.png" alt="graphic">
+                </div>
+            </div>
+        </div>
+        <div class="ref__statics">
+            <div class="ref__header">
+                <span>Имя пользователя</span>
+                <span>Заработано за все время</span>
+                <span>За 7 дней</span>
+            </div>
+            <div class="ref__items">
+                <div class="ref__item">
+                    <div class="ref__user">
+                        <div class='ref__user-avatar'></div>
+                        <span>Test User</span>
+                    </div>
+                    <span>180.000 ₽</span>
+                    <span>180.000 ₽</span>
+                </div>
+                <div class="ref__item">
+                    <div class="ref__user">
+                        <div class='ref__user-avatar'></div>
+                        <span>Test User</span>
+                    </div>
+                    <span>180.000 ₽</span>
+                    <span>180.000 ₽</span>
+                </div>
+                <div class="ref__item">
+                    <div class="ref__user">
+                        <div class='ref__user-avatar'></div>
+                        <span>Test User</span>
+                    </div>
+                    <span>180.000 ₽</span>
+                    <span>180.000 ₽</span>
+                </div>
+                <div class="ref__item">
+                    <div class="ref__user">
+                        <div class='ref__user-avatar'></div>
+                        <span>Test User</span>
+                    </div>
+                    <span>180.000 ₽</span>
+                    <span>180.000 ₽</span>
+                </div>
+                <div class="ref__item">
+                    <div class="ref__user">
+                        <div class='ref__user-avatar'></div>
+                        <span>Test User</span>
+                    </div>
+                    <span>180.000 ₽</span>
+                    <span>180.000 ₽</span>
+                </div>
+                <div class="ref__item">
+                    <div class="ref__user">
+                        <div class='ref__user-avatar'></div>
+                        <span>Test User</span>
+                    </div>
+                    <span>180.000 ₽</span>
+                    <span>180.000 ₽</span>
+                </div>
+                <div class="ref__item">
+                    <div class="ref__user">
+                        <div class='ref__user-avatar'></div>
+                        <span>Test User</span>
+                    </div>
+                    <span>180.000 ₽</span>
+                    <span>180.000 ₽</span>
+                </div>
+            </div>
+        </div>
+        <form class="setting__form">
+            <span class='title'>Вывод средств</span>
+            <div class="setting__form__content">
+                <div class="makeMerchant__item">
+                    <span>Сумма вывода</span>
+                    <input type="number" class='input-reset input' placeholder='Введите сумму вывода'>
+                </div>
+                <div class="makeMerchant__item">
+                    <span>Номер</span>
+                    <input type="text" class='input-reset input' placeholder='TEuBL12AdvjYmwMKsorJ8pWURQj7b9CaUb'>
+                </div>
+                <div class="makeMerchant__item">
+                    <span>Система</span>
+                    <div class="select">
+                        <svg class="select-icon">
+                            <use xlink:href="img/sprite.svg#next"></use>
+                        </svg>
+                            <input type='text' class='input-reset input' placeholder='Выберите систему'/>
+                        <ul class="list-reset">
+                            <li>Пункт 1</li>
+                            <li>Пункт 2</li>
+                            <li>Пункт 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="makeMerchant__item">
+                    <span>Банк (Для СБП)</span>
+                    <div class="select">
+                        <svg class="select-icon">
+                            <use xlink:href="img/sprite.svg#next"></use>
+                        </svg>
+                            <input type='text' class='input-reset input' placeholder='Выберите систему вывода'/>
+                        <ul class="list-reset">
+                            <li>Пункт 1</li>
+                            <li>Пункт 2</li>
+                            <li>Пункт 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class='btn-reset btn-white settingFormBtn'>Создать заявку</button>
+            </div>
+        </form>
+        <div class="swiperTable">
+            <!-- Блок для десктопа -->
+            <span class='title'>История</span>
+             <div class="tableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>
+                            <span>ID ПЛАТЕЖА</span>
+                        </th>
+                        <th>
+                            <span>РЕКВИЗИТЫ</span>
+                        </th>
+                            <th>
+                            <span>СУММА</span>
+                        </th>
+                        <th>
+                            <span>СИСТЕМА</span>
+                        </th>
+                        <th>
+                            <span>ДАТА</span>
+                        </th>
+                            <th>
+                            <span>СТАТУС</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class='light'>
+                                <span>5935</span>
+                            </td>
+                            <td class='text-grey'>
+                                <span>4888 5888 6888 7888</span>
+                            </td>
+                            <td>
+                                <span>180.000 ₽</span>
+                            </td>
+                            <td class='text-grey'>
+                                <span>Т — Банк</span>
+                            </td>
+                            <td class='light'>
+                                <span>19.11.2024</span>
+                            </td>
+                            <td>
+                                <span class='status _success'>Оплачен</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+             </div>
+            <div class="pagination">
+                <button class="btn-reset btn _active">
+                    <svg class="svg">
+                        <use xlink:href="img/sprite.svg#prev"></use>
+                    </svg>
+                </button>
+                <button class="btn-reset btn _active">
+                    1
+                </button>
+                <button class="btn-reset btn">
+                    2
+                </button>
+                <button class="btn-reset btn">
+                    3
+                </button>
+                <button class="btn-reset btn">
+                    4
+                </button>
+                <button class="btn-reset btn">
+                    <svg class="svg">
+                        <use xlink:href="img/sprite.svg#next"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    </div>
+</section>
+            </main>
+         </div>
+
+      </div>
+   </body>
+
+</html>
