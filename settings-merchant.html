@@ -110,11 +110,41 @@
             <main class="main">
                <header class="header">
   <div class="profile">
+    <div class="notification__container">
     <button class="btn-reset btn-secondary notification">
       <svg class="svg">
         <use xlink:href="img/sprite.svg#mage_notification"></use>
       </svg>
     </button>
+    <div class="notification__menu">
+      <div class="notification__header">
+        <svg >
+          <use xlink:href="img/sprite.svg#mage_notification"></use>
+        </svg>
+        <span>Уведомления</span>
+      </div>
+      <div class="notification__content">
+        <div class="notification__scroll">
+          <div class="notification__item">
+            <span>20 Nov 2024, 12:27</span>
+            <p>Комиссия по СБП (пополнение счета в валюте RUB с любого РФ банка) временно снижена с 4,99% до 1,99%. Успейте воспользоваться акцией.</p>
+          </div>
+          <div class="notification__item">
+            <span>20 Nov 2024, 12:27</span>
+            <p>Комиссия по СБП (пополнение счета в валюте RUB с любого РФ банка) временно снижена с 4,99% до 1,99%. Успейте воспользоваться акцией.</p>
+          </div>
+          <div class="notification__item">
+            <span>20 Nov 2024, 12:27</span>
+            <p>Комиссия по СБП (пополнение счета в валюте RUB с любого РФ банка) временно снижена с 4,99% до 1,99%. Успейте воспользоваться акцией.</p>
+          </div>
+          <div class="notification__item">
+            <span>20 Nov 2024, 12:27</span>
+            <p>Комиссия по СБП (пополнение счета в валюте RUB с любого РФ банка) временно снижена с 4,99% до 1,99%. Успейте воспользоваться акцией.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="user">
       <img src="./img/avatar.svg" alt="avatar" width='104' height='104'>
       <div class="user__name">
@@ -211,7 +241,7 @@
                                 <span>26.09.2024<br/>20:55:46</span>
                             </td>
                             <td>
-                                <button class="btn-reset">Подробнее</button>
+                                <button class="btn-reset popup__link" data-popupId='response'>Подробнее</button>
                             </td>
                             <td>
                                 <span class='status _success'>Оплачен</span>
@@ -240,7 +270,7 @@
                                 <span>26.09.2024<br/>20:55:46</span>
                             </td>
                             <td>
-                                <button class="btn-reset">Подробнее</button>
+                                <button class="btn-reset popup__link" data-popupId='response'>Подробнее</button>
                             </td>
                             <td>
                                 <span class='status _loading'>Оплачен</span>
@@ -269,7 +299,7 @@
                                 <span>26.09.2024<br/>20:55:46</span>
                             </td>
                             <td>
-                                <button class="btn-reset">Подробнее</button>
+                                <button class="btn-reset popup__link" data-popupId='response'>Подробнее</button>
                             </td>
                             <td>
                                 <span class='status _error'>Оплачен</span>
@@ -445,7 +475,7 @@
                                                         <span>26.09.2024<br/>20:55:46</span>
                                                     </td>
                                                     <td>
-                                                        <button class="btn-reset">Подробнее</button>
+                                                        <button class="btn-reset popup__link" data-popupId='response'>Подробнее</button>
                                                     </td>
                                                     <td>
                                                         <span class='status _success'>Оплачен</span>
@@ -462,7 +492,7 @@
                                                         <span>26.09.2024<br/>20:55:46</span>
                                                     </td>
                                                     <td>
-                                                        <button class="btn-reset">Подробнее</button>
+                                                        <button class="btn-reset popup__link" data-popupId='response'>Подробнее</button>
                                                     </td>
                                                     <td>
                                                         <span class='status _success'>Оплачен</span>
@@ -479,7 +509,7 @@
                                                         <span>26.09.2024<br/>20:55:46</span>
                                                     </td>
                                                     <td>
-                                                        <button class="btn-reset">Подробнее</button>
+                                                        <button class="btn-reset popup__link" data-popupId='response'>Подробнее</button>
                                                     </td>
                                                     <td>
                                                         <span class='status _success'>Оплачен</span>
@@ -496,7 +526,7 @@
                                                         <span>26.09.2024<br/>20:55:46</span>
                                                     </td>
                                                     <td>
-                                                        <button class="btn-reset">Подробнее</button>
+                                                        <button class="btn-reset popup__link" data-popupId='response'>Подробнее</button>
                                                     </td>
                                                     <td>
                                                         <span class='status _success'>Оплачен</span>
@@ -513,7 +543,7 @@
                                                         <span>26.09.2024<br/>20:55:46</span>
                                                     </td>
                                                     <td>
-                                                        <button class="btn-reset">Подробнее</button>
+                                                        <button class="btn-reset popup__link" data-popupId='response'>Подробнее</button>
                                                     </td>
                                                     <td>
                                                         <span class='status _success'>Оплачен</span>
@@ -607,7 +637,7 @@
                         <span>Секретное слово 2</span>
                         <input type="text" class='input-reset input' placeholder='linepay.fun'>
                     </div>
-                    <button class='btn-reset btn-white makeMerchant__btn'>Создать мерчнант</button>
+                    <button class='btn-reset btn-white makeMerchant__btn popup__link' data-popupId='recaptcha'>Создать мерчанта</button>
                 </div>
             </div>
         </form>
@@ -920,10 +950,33 @@
 				}	
 			}
 		 </style>
+               <div id='recaptcha' class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="recaptcha__container">
+                <div class="g-recaptcha" data-sitekey="ВАШ_SITE_KEY"></div>
+            </div>
+        </div>
+    </div>
+</div>
+               <div id='response' class="popup">
+    <div class="popup__body">
+        <div class="popup__content popup__response">
+            <div class="response__content">
+                <span class='response__title'>Ответ от сервера</span>
+                <div class="response__container">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ut vero suscipit vel voluptatibus voluptatem dolorum porro, assumenda ea recusandae odit ratione a, culpa unde dolore quasi nostrum maiores ex harum officia sapiente, nesciunt magnam officiis. Corrupti quasi nobis tenetur.
+                </div>
+            </div>
+            <button class="btn-reset btn btn-secondary response__btn close__popup">Закрыть</button>
+        </div>
+    </div>
+</div>
             </main>
          </div>
 
       </div>
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
    </body>
 
 </html>
